@@ -1,0 +1,36 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Gobernantes de Nicaragua
+
+```{r, include = FALSE}
+library(tidyverse)
+
+data <- read_csv("data/nicaraguan-rulers.csv") %>% as_tibble()
+```
+
+Este repositorio contiene datos sobre todos los gobernantes de Nicaragua. Actualmente, los datos en este repositorio contienen información desde el año 1508 al 2020.
+
+```{r}
+data
+```
+
+## Descargar los datos
+
+Los datos se encuentran en la carpeta `/data` en formato [CSV](https://raw.githubusercontent.com/RRMaximiliano/nicaraguna-rulers/master/data/nicaraguan-rulers.csv). Al acceder el link, deberán darle click derecho "guardar como / save as".
+
+## Comentarios y sugerencias
+
+Para realizar comentarios o sugerencias sobre la base de datos puedes abrir un issue en este repositorio: [https://github.com/rrmaximiliano/policia-nacional-nic-stats/issues](https://github.com/rrmaximiliano/policia-nacional-nic-stats/issues)
